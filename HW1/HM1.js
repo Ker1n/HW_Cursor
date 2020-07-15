@@ -11,7 +11,7 @@
  let maxPrice       = Math.max(priceBread,priceWine,priceCoffee);  
  let integerSum     = Math.floor(priceBread + priceWine + priceCoffee);
  let rounding       = Math.round(sum/100)*100; 
- let boolean        = Math.floor(sum)% 2 ? "Odd" : "Even"
+ let boolean        = sum % 2 == 0;
  let change         = stock - sum; 
  let roundingToTwo  = avarage.toFixed(2);
  let randomDiscount = Math.floor(Math.random(discount)*68.96); // max discount 30%
