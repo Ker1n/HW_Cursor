@@ -1,8 +1,17 @@
 let inputNumberN = Number.parseFloat(prompt("Please enter first number"));
 let inputNumberM = Number.parseFloat(prompt("Please enter second number"));
-const checkNumberN = !Number.isFinite(inputNumberN) || !Number.isFinite(inputNumberM);
+const checkNumberN = Number.isFinite(inputNumberN) || Number.isFinite(inputNumberM);
 
-if (checkNumberN) alert("please enter integer numbers"), location.reload();
+if (inputNumberN >= inputNumberM) {
+  alert("Number M must be greater than Number N"); 
+} else {
+  inputNumberN;
+}
+if (!checkNumberN) {
+  alert("please enter integer numbers") ;
+}  else {
+  inputNumberN;
+}
 
 const useEvenOrOdd  = confirm ("Need to skip even numbers?");
 
@@ -14,4 +23,3 @@ let sum = 0;
     }
   };
 console.log(`total: ${sum}`);
-    
