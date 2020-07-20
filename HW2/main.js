@@ -1,9 +1,17 @@
 let inputNumberN = Number.parseFloat(prompt("Please enter first number"));
-let inputNumberM = Number.parseFloat(prompt("Please enter second number"));
-const checkNumberN = Number.isFinite(inputNumberN) || Number.isFinite(inputNumberM);
+let inputNumberM = Number.parseFloat(prompt("Please enter second number")); 
 
-if (inputNumberN >= inputNumberM) alert("Number M must be greater than Number N"); 
-if (!checkNumberN) alert("please enter integer numbers") ;
+while (!Number.isFinite(inputNumberN)) {
+  inputNumberN = Number.parseFloat(prompt("first number must be an integer"));
+}
+while (!Number.isFinite(inputNumberM)) {
+  inputNumberM = Number.parseFloat(prompt("second number must be an integer"));
+}
+
+if (inputNumberN >= inputNumberM) alert(
+`First number must be greater than Second number
+Please reload the page`
+);
 
 const useEvenOrOdd  = confirm ("Need to skip even numbers?");
 
