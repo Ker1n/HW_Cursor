@@ -1,10 +1,10 @@
 let inputNumberN = Number.parseFloat(prompt("Please enter first number"));
 let inputNumberM = Number.parseFloat(prompt("Please enter second number")); 
 
-while (!Number.isFinite(inputNumberN)) {
+while (!Number.isFinite(inputNumberN) || (!Number.isInteger(inputNumberN))) {
   inputNumberN = Number.parseFloat(prompt("first number must be an integer"));
 }
-while (!Number.isFinite(inputNumberM)) {
+while (!Number.isFinite(inputNumberM) || (!Number.isInteger(inputNumberN))) {
   inputNumberM = Number.parseFloat(prompt("second number must be an integer"));
 }
 
