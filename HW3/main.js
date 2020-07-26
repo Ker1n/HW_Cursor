@@ -124,7 +124,7 @@ document.write(`
  Random password: ${randomPassword(10)} <br>
  Letters deleted: ${deleteLetters('a', "blablabla")} <br>
  Is't palindrom? : ${isPalindrome('мадам')} <br>
- Duplicate letters deleted: ${deleteDuplicateLetter("Бісквіт був дуже ніжним")} <br>
+ Duplicate letters deleted: ${deleteDuplicateLetter("бісквіт був дуже ніжним")} <br>
 `);
 
 
