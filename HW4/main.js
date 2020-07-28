@@ -17,7 +17,8 @@ function splitStudents(arr) {
 }
 
 const pairs = splitStudents(students);
-console.log(splitStudents(students));
+
+console.log('Task#1: ', splitStudents(students));
 
 function pairsAndTheme(pairs, themes) {
     const arr = [];
@@ -26,7 +27,7 @@ function pairsAndTheme(pairs, themes) {
         }
     return arr;
 }
-console.log(pairsAndTheme(pairs, themes));
+console.log('Task#2: ',pairsAndTheme(pairs, themes));
 
 function getMark() {
     let studentsMarks = []
@@ -35,7 +36,7 @@ function getMark() {
         }
     return studentsMarks;
 }
-console.log(getMark());
+console.log('Task#3: ',getMark());
 
 function randomMark() {
     return Math.round(Math.random() * (5 - 1) + 1);
@@ -50,4 +51,4 @@ function pairsThemesRandomMark() {
     }
     return finalArray;
 }
-console.log(pairsThemesRandomMark());
+console.log('Task#4: ',pairsThemesRandomMark());
