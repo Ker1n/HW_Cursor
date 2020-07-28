@@ -4,17 +4,14 @@ const themes = ["Диференційне рівняння", "Теорія ав�
 
 const marks = [4, 5, 5, 3, 4, 5];
 
-function splitStudents(arr) {
-    let amount = students.length / 2;
-    let result = new Array(amount);
-        for (let i = 0; i < amount; i++) {
-            result[i] = [];
-        }
-        for (let i = 0; i < arr.length; i++) {
-            result[i % amount].push(arr[i]);
-        }
-    return result;
-}
+function splitStudents (students) {
+  const arr = [
+    [students[0], students[2]],
+    [students[1], students[3]],
+    [students[4], students[5]],
+  ];
+  return arr;
+};
 
 const pairs = splitStudents(students);
 
