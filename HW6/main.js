@@ -31,8 +31,8 @@ const getSubjects = id => Object.keys(students[id].subjects).map(subject => subj
 console.log('getSubjects: ', getSubjects(0));
     
 //Task#2
-function getAverageMark (id)  { 
-  arr = Object.values(students[id].subjects);
+function getAverageMark (students)  { 
+  arr = Object.values(students.subjects);
   sumArray = (arr[0].concat(arr[1], arr[2]));
   result = 0;
     for (let i = 0; i < sumArray.length; i++) {
@@ -42,14 +42,14 @@ function getAverageMark (id)  {
   return average.toFixed(2);
 }
 
-console.log('getAverageMark: ', getAverageMark(0));
+console.log('getAverageMark: ', getAverageMark(students[0]));
 
 
 //Task#3
 function getStudentInfo (id) { 
  name = students[id].name;
  course = students[id].course;
- result = "Student's name: " + name + ", " + "course: " + course + "," + " average mark: " + getAverageMark(id);
+ result = "Student's name: " + name + ", " + "course: " + course + "," + " average mark: " + getAverageMark(students[id]);
   return  result
 }
 console.log('getStudentInfo: ', getStudentInfo(0));
@@ -67,21 +67,18 @@ console.log('getStudentsNames: ', getStudentsNames());
 
 //Task#5
 
+function getBestStudent(students){
+    let mark = 0;
+    for (let i = 0; i < students.length; i++){
+        if (getAverageMark(students[i]) > mark) {
+            mark = getAverageMark(students[i]);
+            bestStudent = students[i];
+        }
+    }
+    return bestStudent.name;
+}
 
-
-// function getBestStudent(students){
-//     let index = [];
-//     let mark = 0;
-//     for (let i = students.length; i < students.length; i++){
-//         // if(getAverageMark() > mark){
-//         //     mark = getAverageMark();
-//         //     index = i;
-//         // }
-//     }
-//     return students[index].name;
-// }
-
-// console.log(getBestStudent(students));
+console.log(getBestStudent(students));
 
 
 //Task#6
