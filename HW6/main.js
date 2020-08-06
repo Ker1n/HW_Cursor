@@ -69,26 +69,19 @@ console.log('getStudentsNames: ', getStudentsNames());
 
 
 
+// function getBestStudent(students){
+//     let index = [];
+//     let mark = 0;
+//     for (let i = students.length; i < students.length; i++){
+//         // if(getAverageMark() > mark){
+//         //     mark = getAverageMark();
+//         //     index = i;
+//         // }
+//     }
+//     return students[index].name;
+// }
 
-function getBestStudent(students) {
-  let arr = [];
-
-  for (let i = 0; i < students.length; i++) {
-    arr = Object.values(students[i].subjects);
-  }
-
-
-  console.log(students.length)
-  console.log('your log')
-  return arr; 
-}
-
-
-console.log(getBestStudent(students))
-//console.log(getBestStudent());
-
-
-console.log("task5 must be here");
+// console.log(getBestStudent(students));
 
 
 //Task#6
