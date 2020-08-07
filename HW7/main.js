@@ -36,20 +36,18 @@ console.log('getTotalTaxes: ', getTotalTaxes.call(ukraine) + "$");
 
 function getMySalary () { 
     
-    const min = 1500;
-    const max = 2000; 
-    let salary = Math.floor(min + (max - min) * Math.random());
-    let taxes = salary * this.tax
-    let profit = salary - taxes
-    let obj = {salary, taxes, profit};   
-    console.log(obj);
-        setInterval(() => {
-            let salary = Math.floor(min + (max - min) * Math.random());
-            let taxes = salary * this.tax
-            let profit = salary - taxes
-            let obj = {salary, taxes, profit};  
-           console.log(obj) 
-           }, 10000);
-        
-    }
+const min = 1500;
+const max = 2000; 
+
+   setInterval(() => {
+
+       let salary = Math.floor(min + (max - min) * Math.random());
+       let taxes = salary * this.tax
+       let profit = salary - taxes
+       let obj = {salary, taxes, profit};  
+      console.log(obj) 
+      }, 10000);
+   
+}
 getMySalary.call(ukraine);
+
