@@ -34,7 +34,6 @@ function getTotalTaxes() {
 }
 console.log('getTotalTaxes: ', getTotalTaxes.call(ukraine) + "$");
 
-
 function getMySalary () { 
     
     const min = 1500;
@@ -44,7 +43,13 @@ function getMySalary () {
     let profit = salary - taxes
     let obj = {salary, taxes, profit};   
     console.log(obj);
-        setInterval(() => { console.log(obj) }, 10000);
+        setInterval(() => {
+            let salary = Math.floor(min + (max - min) * Math.random());
+            let taxes = salary * this.tax
+            let profit = salary - taxes
+            let obj = {salary, taxes, profit};  
+           console.log(obj) 
+           }, 10000);
         
     }
 getMySalary.call(ukraine);
