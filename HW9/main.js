@@ -9,7 +9,7 @@ function randomColor() {
           const z = Math.floor(Math.random() * 256);
           colorArray[i].style.backgroundColor = "rgb(" + x + "," + y + "," + z + ")";
         }
-    }, 5000);
+    }, 1000);
 }
 
 randomColor();
