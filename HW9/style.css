@@ -1,0 +1,20 @@
+
+body { 
+    align-content: center;
+}
+
+.container { 
+    width: 280px;
+    height: 280px;
+
+}
+
+.square { 
+    float: left;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    margin: 1px;
+    
+}
