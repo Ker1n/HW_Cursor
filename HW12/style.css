@@ -1,0 +1,46 @@
+
+.mainButton button { 
+    position: absolute;
+    background-color: black;
+    color: coral;
+    border: solid 3px blueviolet;
+    border-radius: 2px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+   
+
+}
+.container { 
+    width: auto;
+    height: auto;
+}
+
+.people { 
+    float: left;
+    border: solid 2px black;
+    border-radius: 5px;
+    width: 300px;
+    height: 150px;
+    text-align: left;
+    margin: 10px 10px 10px 10px;
+    padding-left: 7px;
+    box-shadow: -1px -1px 3px rgba(255,255,255,0.1),
+                 6px 6px 6px rgba(0,0,0,0.8);
+}
+
+.planets { 
+    float: left;
+    border: solid 2px black;
+    border-radius: 5px;
+    width: 300px;
+    height: 200px;
+    text-align: left;
+    margin: 10px 10px 10px 10px;
+    padding-left: 7px;
+    box-shadow: -1px -1px 3px rgba(255,255,255,0.1),
+                 6px 6px 6px rgba(0,0,0,0.8);
+}
+
