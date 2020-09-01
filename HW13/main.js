@@ -35,8 +35,7 @@ function* generatorSize(value) {
         }
     };
 };
-
-
+ 
 const changeSize = generatorSize(startValue)
 const getIdButtonPlus = document.getElementById('plus');
 const getIdButtonMinus = document.getElementById('minus');
