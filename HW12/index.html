@@ -3,24 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/style.css">
     <title>Document</title>
 </head>
-<body>
-    <div class = 'mainButton'>
-        <button id = 'getIinform'>Get information</button>
-    </div>
+<body  >
+    <div class="container">
+     
+        <!-- <button id="getInfo">Get information</button> -->
+        <div class="selectEpisode">
+            <label for="selectEpisode">Select Episode: </label> 
+            <br>
+                <select id = 'selectEpisode' class = "options">
+                    <option value="4">Episode I</option>
+                    <option value="5">Episode II</option>
+                    <option value="6">Episode III</option>
+                    <option value="1">Episode IV</option>
+                    <option selected value="2">Episode V</option>
+                    <option value="3">Episode VI</option>
+                  </select>
+            <br>
 
-
-    <!-- <div>
-        <button id="getPeople">People</button> 
-        <button id="getPlanets">Planets</button>
-    </div> -->
-    
-    <div class="container"></div>
-    <div id = buttons>
-        <!-- <button id = "prev">Prev</button>
-        <button id = "next">Next</button> -->
+            
+            <label for="selectEpisode">wookiees lenguaje: </label> 
+            <input type="radio" class="wookiee" id ="Positive Wookiee">
+            <input type="radio"class = "wookiee" id = "Negative Wookiee">
+        </div>
+        
+        <div id="select"></div>
+        <div id="nextAndPrev"></div>
+        <div class="controlPage"></div>
+        <div class="info"></div>
+        
     </div>
     
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
