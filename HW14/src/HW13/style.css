@@ -1,0 +1,171 @@
+
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #212121;
+    
+}
+
+.react {
+    width: 300px;
+    height: 300px;
+    margin: 50px auto;
+    position: relative;
+}
+.container1 {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    float: left;
+    text-align: center;
+    color: violet;
+}
+.react:before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+
+    background-color: rgb(0, 211, 248);
+    border-radius: 50%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate3d(-50%, -50%, 0);
+    animation: reactCircle 500ms ease-in-out backwards;
+}
+
+.react-ellipse {
+    width: 90%;
+    height: 110px;
+
+    border: 8px solid #00d3f8;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.react-ellipse.center {
+    transform: translate3d(-50%, -50%, 0);
+    animation: reactEllipseCenter 1000ms ease-in-out backwards 500ms;
+}
+
+.react-ellipse.left {
+    transform: translate3d(-50%, -50%, 0) rotate(60deg);
+    animation: reactEllipseLeft 800ms ease-in-out backwards 1000ms;
+}
+
+.react-ellipse.right {
+    transform: translate3d(-50%, -50%, 0) rotate(-60deg);
+    animation: reactEllipseRight 800ms ease-in-out backwards 1000ms;
+}
+
+.colorButtons {
+    width: 300px;
+    margin: 50px auto;
+    position: relative;
+    text-align: center;
+    
+}
+
+.buttons {
+    width: 85px;
+    height: 50px;
+    font-size: 35px;
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    margin: 10px 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 40px 40px #00d3f8 inset, 0 0 0 0 #00d3f8;
+    letter-spacing: 2px;
+    color: #161818;
+    transition: .15s ease-in-out;
+  }
+
+  .buttons:hover {
+    box-shadow: 0 0 10px 0 #00d3f8 inset, 0 0 10px 4px #00d3f8;
+    color: #00d3f8;
+  }
+  
+  .generator { 
+    width: 300px;
+    margin: 50px auto;
+    position: relative;
+    text-align: center;
+
+  }
+  .inputId { 
+      height: 70px;
+      font-size: 50px;
+      text-align: center;
+      color: #00d3f8;
+      text-shadow: 1px 1px 10px #00d3f8, 0 0 1em sandybrown;
+    
+  }
+
+ .buttonGenerate { 
+    
+    width: 145px;
+    height: 80px;
+    font-size: 20px;
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    padding: 10px 10px ;
+    margin: 10px 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 40px 40px #00d3f8 inset, 0 0 0 0 #00d3f8;
+    letter-spacing: 2px;
+    color: #161818;
+    transition: .15s ease-in-out;
+  }
+  .buttonGenerate:hover {
+    box-shadow: 0 0 10px 0 #00d3f8 inset, 0 0 10px 4px #00d3f8;
+    color: #00d3f8;
+  }
+ 
+
+  @keyframes reactCircle {
+    from {
+        transform: translate3d(-50%, -50%, 0) scale(0);
+    }
+    to {
+        transform: translate3d(-50%, -50%, 0) scale(1);
+    }
+}
+@keyframes reactEllipseCenter {
+    from {
+        transform: translate3d(-50%, -50%, 0) rotateX(90deg);
+    }
+    to {
+        transform: translate3d(-50%, -50%, 0) rotateX(0deg);
+    }
+}
+@keyframes reactEllipseLeft {
+    from {
+        transform: translate3d(-50%, -50%, 0) rotate(0deg);
+        opacity: 0;
+    }
+    to {
+        transform: translate3d(-50%, -50%, 0) rotate(60deg);
+        opacity: 1;
+    }
+}
+@keyframes reactEllipseRight {
+    from {
+        transform: translate3d(-50%, -50%, 0) rotate(0deg);
+        opacity: 0;
+    }
+    to {
+        transform: translate3d(-50%, -50%, 0) rotate(-60deg);
+        opacity: 1;
+    }
+}
